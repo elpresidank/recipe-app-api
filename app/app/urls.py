@@ -17,6 +17,10 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    # Admin URL's
     path('admin/', admin.site.urls),
+
+    # Project URL's
     path('api/user/', include('user.urls')),
+    path('api/recipe/', include('recipe.urls')),
 ]
